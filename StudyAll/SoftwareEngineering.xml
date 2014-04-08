@@ -1,0 +1,356 @@
+<?xml version="1.0" ?>
+<guide title="Software Engineering">
+  <card difficulty="D" category="knowledge">
+    <question>
+      <![CDATA[
+      <p>
+      <em>True</em> or <em>False</em>.
+      The system is nevery an actor in a use case diagram.
+      </p>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>
+      True
+      </p>
+      ]]>
+    </answer>
+
+    <hint>
+      <![CDATA[
+      <p>
+      A use case diagram whos the relationships between actors and use cases.
+      </p>
+      ]]>
+    </hint>
+
+    <context>
+      <![CDATA[
+      <p>
+      Product Design
+      </p>
+      ]]>
+    </context>
+  </card>
+
+  <card difficulty="B" category="analysis">
+    <question>
+      <![CDATA[
+      <p>
+      <em>True</em> or <em>False</em>.
+      A "high resolution" use case diagram will tend to have a large
+      number of use cases for the amount of functionality in the
+      system.
+      </p>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>
+      True
+      </p>
+      ]]>
+    </answer>
+
+    <hint>
+      <![CDATA[
+      <p>
+      A high level of resolution is the same as a low level of 
+      abstraction.
+      </p>
+      ]]>
+    </hint>
+
+    <context>
+      <![CDATA[
+      <ul><li>Systems</li><li>Product Design</li></ul>
+      ]]>
+    </context>
+  </card>
+
+  <card difficulty="D" category="application">
+    <question>
+      <![CDATA[
+      <p>
+      A <em>system</em> consists of:
+      </p>
+      <ol type="A">
+        <li>A set of objects</li>
+        <li>The attributes of objects</li>
+        <li>The relationships between objects</li>
+        <li>All of the above</li>
+        <li>None of the above</li>
+      </ol>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>D</p>
+      ]]>
+    </answer>
+
+    <context>
+      <![CDATA[
+      <p>
+      Systems
+      </p>
+      ]]>
+    </context>
+  </card>
+
+
+  <card difficulty="C" category="knowledge">
+    <question>
+      <![CDATA[
+      <p>
+      An <em>element/atom</em> in a system is treated as:
+      </p>
+      <ol type="A">
+        <li>A stakeholder</li>
+        <li>A life-cycle</li>
+        <li>A black box</li>
+        <li>All of the above</li>
+        <li>None of the above</li>
+      </ol>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>C</p>
+      ]]>
+    </answer>
+
+    <hint>
+      <![CDATA[
+      <p>
+      What is true of a black box in the real world?
+      </p>
+      ]]>
+    </hint>
+
+    <context>
+      <![CDATA[
+      <p>
+      Systems
+      </p>
+      ]]>
+    </context>
+  </card>
+
+  <card difficulty="C" category="comprehension">
+    <question>
+      <![CDATA[
+      <p>
+      A <em>requirement</em> is:
+      </p>
+      <ol type="A">
+        <li>A statement in a problem</li>
+        <li>A statement in a solution</li>
+        <li>A black box</li>
+        <li>All of the above</li>
+        <li>None of the above</li>
+      </ol>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>
+      B
+      </p>
+      ]]>
+    </answer>
+
+    <hint>
+      <![CDATA[
+      <p>
+      What is the difference between a <em>need</em> and a
+      <em>requirement</em>?
+      </p>
+      ]]>
+    </hint>
+
+    <context>
+      <![CDATA[
+      <p>
+      Product Design
+      </p>
+      ]]>
+    </context>
+  </card>
+
+  <card difficulty="C" category="application">
+    <question>
+      <![CDATA[
+      <p>
+      Explain why (using what you know about human vision) you should
+      not use red text on a blue background.
+      </p>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>
+      The lens of the human eye can't simultaneously focus 
+      wavelengths that are very different from each other.
+      </p>
+      ]]>
+    </answer>
+
+    <hint>
+      <![CDATA[
+      <p>
+      Think about the lens of the human eye (not the cones).
+      </p>
+      ]]>
+    </hint>
+
+    <context>
+      <![CDATA[
+      <p>
+      Product Design
+      </p>
+      ]]>
+    </context>
+  </card>
+
+  <card difficulty="A" category="application">
+    <question>
+      <![CDATA[
+      <p>
+      <em>Create a UML Use case Diagram for the following partial description
+      of an Internet auction system.</em>
+      </p>
+
+      <p>
+      Anyone may use the search features of the system and anyone may
+      look at an auction's information.
+      </p>
+
+      <p>
+      Only members (people who are registered with the system)
+      may bid for items or place items for sale. Members must log-in to
+      bid for items or place an item for sale. Members who forget their
+      password can have it mailed to them.
+      </p>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <img src="UseCaseDiagram.png" />
+      ]]>
+    </answer>
+
+    <hint>
+      <![CDATA[
+      <p>
+      Think about the relationship between members and other people.
+      </p>
+      ]]>
+    </hint>
+
+    <context>
+      <![CDATA[
+      <p>
+      Product Design
+      </p>
+      ]]>
+    </context>
+  </card>
+
+  <card difficulty="B" category="evaluation">
+    <question>
+      <![CDATA[
+      <p>
+      Suppose you are building a course registration system for a university.
+      One possible design of the <code>Professor</code> and <code>Student
+      classes is the following:
+      </p>
+      <img src="person01.png" />
+      <p>
+      Another possible design of the <code>Professor</code> and <code>Student
+      classes is the following:
+      </p>
+      <img src="person02.png" />
+      <p>
+      Which is better and why?
+      </p>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>
+      The second design is certainly better. The first design will have 
+      considerable code duplication. The second recognizes that both 
+      <code>Professor</code> objects and <code>Student</code> objects
+      have something in common -- they are <code>Person</code> objects.
+      </p>
+      ]]>
+    </answer>
+
+    <hint>
+      <![CDATA[
+      <p>
+      When should you use specialization (i.e., create child classes).
+      </p>
+      ]]>
+    </hint>
+
+    <context>
+      <![CDATA[
+      <p>
+      Engineering Design
+      </p>
+      ]]>
+    </context>
+  </card>
+
+
+  <card difficulty="B" category="comprehension">
+    <question>
+      <![CDATA[
+      <p>
+      Define the <em>principle of least astonishment</em>
+      as it relates to user interface design and explain why it is
+      a good rule of thumb.
+      </p>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>
+      It says that you should use consistent terminology, icons, colors,
+      etc... It is motivated by the capacity of working memory and the fact
+      that rehearsal slows decay.
+      </p>
+      ]]>
+    </answer>
+
+    <hint>
+      <![CDATA[
+      <p>
+      Think about the model human processor and, in particular,
+      working memory.
+      </p>
+      ]]>
+    </hint>
+
+    <context>
+      <![CDATA[
+      <p>
+      Product Design
+      </p>
+      ]]>
+    </context>
+  </card>
+
+</guide>

@@ -1,0 +1,221 @@
+/**
+ * @Author: David Kegley and Paul Henninger
+ */
+
+
+body {
+    margin: 0px;
+    width: 960px;
+    height: 480px;
+    position: fixed;
+}
+
+.studyguide_holder {
+    height: 350px;
+    width: 550px;
+    overflow: scroll;
+    position: fixed;
+    top: 90px;
+    float: left;
+}
+
+#timer {
+    position: fixed;
+    left: 0px;
+}
+
+#time_holder {
+    position: fixed;
+    left: 35px;
+    top: 280px;
+}
+
+.button_holder {
+    position: fixed;
+    width: 100px;
+    margin-left: 650px;
+    top: 200px;
+}
+
+.button_holder input {
+    margin-top: 10px;
+}
+
+#done_button {
+    position: fixed;
+    top: 400px;
+}
+
+.wrapper {
+    width: 960px;
+    height: 480px;
+    background-image:url("images/UI_home.jpg");
+}
+
+nav ul li {
+    list-style-type:none;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+nav ul li:hover {
+    opacity:0.5;
+    filter:alpha(opacity=40);
+}
+
+.side_buttons {
+    float: left;
+    padding-left: 18px;
+    position: fixed;
+}
+
+.sidebar {
+    float: left;
+    width: 170px;
+    height: 480px;
+    background-image:url("images/UI_sidebar_background.jpg");
+    position: fixed;
+    top: 0%;
+}
+
+#timer {
+    margin-top: 0px;
+    margin-left: 22px; 
+}
+
+#pageHome {
+    width: 790px;
+    text-align: center;
+    float: right;
+    color: white;
+    display: block;
+}
+
+#sidebar_home {
+    display: block;
+    background-attachment: fixed;
+}
+
+section h1 {
+    text-align: center;
+}
+
+#pageViewStudyguide {
+    width: 780px;
+    height: auto;
+    margin-left: 170px;
+    padding-left: 10px;
+    margin-top: 25px;
+    text-align: left;
+    float: left;
+    color: white;
+    background-image:url("images/body_background.jpg");
+    background-attachment: fixed;
+    display: none;
+    position: fixed;
+}
+
+#page_result_screen {
+	width: 780px;
+    height: 450px;
+    margin-left: 170px;
+    padding-left: 10px;
+    margin-top: 25px;
+    text-align: left;
+    float: left;
+    color: white;
+    background-image:url("images/body_background.jpg");
+    background-attachment: fixed;
+    display: none;
+    position: fixed;
+    overflow: scroll;
+}
+
+
+
+#sidebar_iteration {
+    display: none;
+    color: white;
+}
+
+#pageViewOptions {
+    width: 750px;
+    height: 480px;
+    margin-left: 185px;
+    margin-top: 25px;
+    float: left;
+    color: white;
+    background-image:url("images/options_pane.jpg");
+    background-repeat: no-repeat;
+    display: none;
+}
+
+
+.timer_div {
+    top: 100px;
+    left: 220px;
+    position: fixed;
+}
+.unit {
+    position: absolute;
+    color: black;
+    display: block;
+    right: 18px;
+    top: 3px;
+    z-index: 9;
+}
+
+.difficulty_form {
+    color: white;
+    position: fixed;
+    top: 150px;
+    left: 220px;
+}
+
+.category_form {
+    color: white;
+    position: fixed;
+    top: 210px;
+    left: 220px;
+}
+
+.cardorder_form {
+    position: fixed;
+    top: 100px;
+    left: 575px;
+}
+
+.category_div {
+    position: fixed;
+    top: 220px;
+    left: 600px;   
+}
+
+.category_div input {
+    heigth: 10px;
+    width: 25px;
+}
+
+.category_div ul li {
+    margin-bottom: 5px;
+}
+
+.category_div ul {
+    list-style: none;
+}
+
+#done_button {
+    display: block;
+}
+
+#sidebar_options {
+    display: none;
+}
+
+#incorrect_button {
+    display: none;
+}
+
+#correct_button {
+    display: none;
+}

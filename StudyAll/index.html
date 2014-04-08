@@ -1,0 +1,221 @@
+<!--Author: David Kegley (kegleydb)
+	Edits by: Ross Ellingworth, Paul Henninger -->
+
+<!DOCTYPE html>
+	<head>
+		<title>StudyAll</title>
+		<link rel="stylesheet" type="text/css" href="studyAllTheme.css">
+		<script src="Main.js" type="text/javascript"></script>
+		<script src="Iterator.js" type="text/javascript"></script>
+		<script src="Card.js" type="text/javascript"></script>
+		<script src="CardStats.js" type="text/javascript"></script>
+		<script src="StudyGuide.js" type="text/javascript"></script>
+		<script src="ChangePage.js" type="text/javascript"></script>
+		<script src="ElapsedTime.js" type="text/javascript"></script>
+		<script src="PerformanceTracker.js" type="text/javascript"></script>
+		<script src="StatisticsRunner.js" type="text/javascript"></script>
+		<script src="StatisticsLibrary.js" type="text/javascript"></script>
+		<script src="GuideDirectory.js" type="text/javascript"></script>
+		<script src="URL.js" type="text/javascript"></script>
+    </head>
+	
+	<html>
+	<body>
+		<div class="wrapper">
+		
+		<!-- sidebar while at the home screen -->
+		<section id="sidebar_home">
+				<nav class="sidebar">
+					<ul class="side_buttons">
+						<li>
+							<!--<img id="startStudying_home" onclick="visible('sidebar_iteration', 'sidebar_home'); visible('pageViewStudyguide', 'pageHome'); setCurrent(getCurrentGuide());" src="images/Start_studying_button.jpg"/>-->
+							<img id="startStudying_home" src="images/Start_studying_button.jpg"/>
+							<!--<input type="button" id="startStudying_home">Start Studying</input>-->
+						</li>
+						
+						<li>
+							<!--<img id="options_home" onclick="visible('sidebar_options', 'sidebar_home'); visible('pageViewOptions', 'pageHome');" src="images/options_button.jpg"/>-->
+							<img id="options_home" src="images/options_button.jpg"/>
+						</li>
+						
+						<li><img id="exit_home" src="images/exit_studyall_button.jpg"/></li>
+					</ul>
+				</nav>
+		</section>
+		
+		
+		<!-- sidebar options during an iteration -->
+		<section id="sidebar_iteration">
+			<nav class="sidebar">
+				<ul class="side_buttons">
+					<li>
+						<!--<img id="home_iteration_button" onclick="visible('sidebar_home', 'sidebar_iteration'); visible('pageHome', 'pageViewStudyguide');" src="images/home_button.jpg"/>-->
+						<img id="home_iteration_button" src="images/home_button.jpg"/>
+					</li>
+					
+					<li><img id="pause_iteration_button" src="images/pause_button.jpg"/></li>
+					
+					<li><img id="exit_iteration_button" src="images/exit_studyall_button.jpg"/></li>
+					
+					<img id="timer" src="images/timer_box.jpg">
+					<section id="time_holder">
+					</section>
+					
+				</ul>
+			</nav>
+		</section>
+		
+		
+		<!-- options sidebar -->
+		<section id="sidebar_options">
+			<nav class="sidebar">
+				<ul class="side_buttons">
+					<li>
+						<img id="home_options_button" src="images/home_button.jpg"/>
+					</li>
+					
+					<li><img src="images/options_button.jpg"/></li>
+					<li><img id="exit_options_button" src="images/exit_studyall_button.jpg"/></li>
+				</ul>
+			</nav>
+		</section>
+			
+		<!-- View studgy guide page -->	
+		<section id="pageViewStudyguide">
+			<h1>View Studyguide</h1>
+			
+			<section class="top">
+			</section>
+			
+			<!-- Holds study guide info from the xml -->
+			<div class="studyguide_holder">
+				<section id="holder"> 
+				</section>
+			</div>
+			
+			<!-- Buttons to navigate the iteration -->
+			<div class="button_holder">
+				<section>
+					<input id="hint_button" type="button" value="View Hint">
+					<input id="answer_button" type="button" value="Check Answer">
+				</section>
+				
+				<section class="bottom">
+					<input id="previousCard_button" type="button" value="Previous">
+					<input id="nextCard_button" type="button" value="Next">
+				</section>
+				
+				<section class="correctness_buttons">
+					<input id="correct_button" type="button" value="Correct">
+					<input id="incorrect_button" type="button" value="Incorrect">
+				</section>
+			
+					<input id="done_button" type="button" value="Done Studying">
+				
+			</div>
+			
+		</section>
+		
+		
+		<!-- Results page -->
+		<section id="page_result_screen">
+			
+			<form id = "Results_Sort" class = "Results_Checkbox">
+			<input id="Total_Correct_Checkbox" type="checkbox" value="aggregated"> Aggregated Results<br>
+			<input id="Sort_Difficulty_Checkbox" type="checkbox" value="difficulty"> Sort By Difficulty<br>
+			<input id="Sort_Category_Checkbox" type="checkbox" value="category"> Sort By Category<br>
+			</form>
+			
+			<div id="results_holder">&nbsp;</div>
+			<h4 id="total_header"></h4>
+			<ul id="list_holder_total">	
+			</ul>
+			
+			<h4 id="difficulty_header"></h4>
+			<ul id="list_holder_difficulty">
+			</ul>
+			
+			<h4 id="category_header"></h4>
+			<ul id="list_holder_category">	
+			</ul>
+		</section>	
+		
+		<!-- Options page -->
+		<section id="pageViewOptions">
+			<div class="timer_div">
+				<label>Set Time Limit: </label>
+				<input id="timer_input" value="0" type="number" min="0">
+				<span class="unit">minutes</span>
+			</div>
+			
+			<form class="difficulty_form">
+				<label>Set Question Difficulty: </label>
+				<input id="a_radio" type="radio" name="diff" value="A"> A
+				<input id="b_radio" type="radio" name="diff" value="B"> B
+				<input id="c_radio" type="radio" name="diff" value="C"> C
+				<input id="d_radio" type="radio" name="diff" value="D"> D<br/>
+				<input id="def_radio" type="radio" name="diff" value="All" checked="checked"> All Difficulties (default)
+			</form>
+			
+			<form class="category_form">
+				<label>Choose Question Categories: </label><br/>
+				<input id="knowledge_box" type="checkbox" name="categ" value="knowledge" checked="checked"> Knowledge <br/>
+				<input id="analysis_box" type="checkbox" name="categ" value="analysis" checked="checked"> Analysis <br/>
+				<input id="comprehension_box" type="checkbox" name="categ" value="comprehension" checked="checked"> Comprehension <br/>
+				<input id="synthesis_box" type="checkbox" name="categ" value="synthesis" checked="checked"> Synthesis <br/>
+				<input id="application_box" type="checkbox" name="categ" value="application" checked="checked"> Application <br/>
+				<input id="evaluation_box" type="checkbox" name="categ" value="evaluation" checked="checked"> Evaluation <br/>
+			</form>
+			
+			<form class="cardorder_form">
+				<label>Specify Card Order: </label><br/>
+				<input id="default_option" type="radio" name="order" value="default" checked="checked"> Default Order <br/>
+				<input id="random_option" type="radio" name="order" value="rand"> Random Order <br/>
+				<input id="dif_inc_option" type="radio" name="order" value="diff_inc"> Difficulty - Increasing <br/>
+				<input id="dif_dec_option" type="radio" name="order" value="diff_dec"> Difficulty - Decreasing <br/>
+				<input id="category_option" type="radio" name="order" value="category"> Category <br/>
+			</form>
+			
+			<form class="category_order_form">
+				<div class="category_div">
+					<ul>
+						<li><label>Knowledge</label>
+						<input value="1" class="option_select" id="knowledge_input" type="number" min="1" max="6" disabled="disabled"></li>
+						<li><label>Analysis</label>
+						<input value="2" class="option_select" id="analysis_input" type="number" min="1" max="6" disabled="disabled"></li>
+						<li><label>Comprehension</label>
+						<input value="3" class="option_select" id="comprehension_input" type="number" min="1" max="6" disabled="disabled"></li>
+						<li><label>Synthesis</label>
+						<input value="4" class="option_select" id="synthesis_input" type="number" min="1" max="6" disabled="disabled"></li>
+						<li><label>Application</label>
+						<input value="5" class="option_select" id="application_input" type="number" min="1" max="6" disabled="disabled"></li>
+						<li><label>Evaluation</label>
+						<input value="6" class="option_select" id="evaluation_input" type="number" min="1" max="6" disabled="disabled"></li>
+					</ul>
+				</div>
+			</form>
+
+		</section>
+		
+		<!-- Home page -->
+		<section id="pageHome">
+      <h1>StudyAll Home</h1>
+      
+      <section id="home">    
+        <form name="f1">
+          <p>
+            Select a studyguide
+            <select id="selectGuide">     
+            </select>
+            <br/><br/>
+            Or specify a studyguide in the URL with "?studyguide_name.xml"
+          </p>
+        </form>
+      </section>
+    </section>
+    
+	</div> <!--Wrapper div-->
+	
+		<script type="text/javascript">init();</script>
+	</body>
+</html>

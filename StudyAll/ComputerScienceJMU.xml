@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<guide-directory>
+	<entry description="Software Engineering (JMU CS345)" file="SoftwareEngineering.xml"> </entry>
+	<entry description="Introductory HTML and CSS" file="HTMLandCSS.xml"> </entry>
+</guide-directory>

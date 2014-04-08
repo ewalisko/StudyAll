@@ -1,0 +1,363 @@
+<?xml version="1.0" ?>
+<guide title="Software Engineering">
+
+  <card difficulty="C" category="synthesis">
+    <question>
+      <![CDATA[
+      <p>
+      The <em>root element</em> of an HTML document is:
+      </p>
+
+      <ol type="A">
+        <li>body</li>
+        <li>head</li>
+        <li>html</li>
+        <li>All of the above</li>
+        <li>None of the above</li>
+      </ol>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>
+      C
+      </p>
+      ]]>
+    </answer>
+
+    <hint>
+      <![CDATA[
+      <p>
+      The root element is the outer-most element.
+      </p>
+      ]]>
+    </hint>
+  </card>
+
+
+  <card difficulty="B" category="knowledge">
+    <question>
+      <![CDATA[
+      <p>
+      Which if the following elements are used to define a list?
+      </p>
+
+      <ol type="A">
+        <li>ol</li>
+        <li>p</li>
+        <li>pre</li>
+        <li>All of the above</li>
+        <li>None of the above</li>
+      </ol>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>
+      A
+      </p>
+      ]]>
+    </answer>
+
+    <hint>
+      <![CDATA[
+      <p>
+      There are two types of lists, ordered and unordered.
+      </p>
+      ]]>
+    </hint>
+  </card>
+
+
+  <card difficulty="C" category="evaluation">
+    <question>
+      <![CDATA[
+      <p>
+      What is <em>hypertext</em>? How is hypertext included in an HTML document?
+      </p>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>
+      Hypertext is text that contains a mechanism for the user to move
+      between (and within) a document.
+      </p>
+
+      <p>
+      It is included in HTML using the <code>a</code> element (which includes
+      an <code>href</code> attribute that refers to the other
+      location.
+      </p>
+      ]]>
+    </answer>
+
+    <hint>
+      <![CDATA[
+      <p>
+      Think link.
+      </p>
+      ]]>
+    </hint>
+  </card>
+
+
+
+  <card difficulty="D" category="analysis">
+    <question>
+      <![CDATA[
+      <p>
+      What is the purpose of a <em>stylesheet</em>?
+      </p>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>
+      A stylesheet defines the form/appearance of a document.
+      </p>
+      ]]>
+    </answer>
+
+    <hint>
+      <![CDATA[
+      <p>
+      HTML is used to mark up the hierarchical parts of a document.
+      </p>
+      ]]>
+    </hint>
+  </card>
+
+
+  <card difficulty="A" category="application">
+    <question>
+      <![CDATA[
+      <p>
+      What does the word "Cascading" refer to in "Cascading Stylesheets".
+      </p>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>
+      It refers to the way in which precedence is given to the different
+      stylesheets that might be associated with a single document.
+      </p>
+      ]]>
+    </answer>
+
+  </card>
+
+
+  <card difficulty="B" category="knowledge">
+    <question>
+      <![CDATA[
+      <p>
+      What are the two parts of a <em>rule</em> in CSS?
+      </p>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>
+      The <em>selector</em> and the <em>declaration</em>.
+      </p>
+      ]]>
+    </answer>
+
+    <hint>
+      <![CDATA[
+      <p>
+      Write down a rule, divide it into two parts, and describe the parts.
+      </p>
+      ]]>
+    </hint>
+  </card>
+
+
+  <card difficulty="C" category="comprehension">
+    <question>
+      <![CDATA[
+      <p>
+      Describe the following CSS rule:
+      </p>
+      <code><pre>p {color: red; font-style: italic;}</pre></code>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>
+      The text in <code>p</code> elements (i.e., paragraph elements)
+      will be rendered in red and in italics.
+      </p>
+      ]]>
+    </answer>
+
+    <hint>
+      <![CDATA[
+      <p>
+      A <code>p</code> element is a paragraph.
+      </p>
+      ]]>
+    </hint>
+  </card>
+
+
+  <card difficulty="A" category="evaluation">
+    <question>
+      <![CDATA[
+      <p>
+      Describe the following CSS rule:
+      </p>
+      <code><pre>body &gt; p {font-family: sans-serif;}</pre></code>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>
+      The text in all <code>p</code> elements that are immediately
+      contained in the <code>body</code> element will be rendered
+      in a sans serif font.
+      </p>
+      ]]>
+    </answer>
+
+    <hint>
+      <![CDATA[
+      <p>
+      It is not the same as the following CSS rule:
+      </p>
+      <code><pre>body  p {font-family: sans-serif;}</pre></code>
+      ]]>
+    </hint>
+  </card>
+
+
+
+  <card difficulty="C" category="application">
+    <question>
+      <![CDATA[
+      <p>
+      Given the following stylesheet:
+      </p>
+    <code><pre>
+    &lt;style&gt;
+p         {color: red;}
+p#final   {color: orange;}
+section   {color: blue;}
+section p {color: yellow;}
+.special  {color: green;}
+    &lt;/style&gt;
+    </pre></code>
+      <p>
+      what will be the color of each line in the following HTML
+      document when it is displayed in a browser?
+      </p>
+    <code><pre>
+    &lt;p&gt;
+    Paragraph 1
+    &lt;/p&gt;
+    &lt;p class="special"&gt;
+    Paragraph 2
+    &lt;/p&gt;
+    &lt;section&gt;
+    Start of the only section
+      &lt;p&gt;
+      Paragraph 3
+      &lt;/p&gt;
+      &lt;p class="special"&gt;
+      Paragraph 4
+      &lt;/p&gt;
+    &lt;/section&gt;
+    &lt;p id="final"&gt;
+    Paragraph 5
+    &lt;/p&gt;
+    </pre></code>
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>
+      <img src="colors.png" />
+      </p>
+      ]]>
+    </answer>
+  </card>
+
+
+  <card difficulty="B" category="synthesis">
+    <question>
+      <![CDATA[
+      <p>
+      Write a document (in HTML) and associated stylesheet (in CSS)
+      that will be rendered as follows when displayed in a
+      browser.  
+      </p>
+
+      <img src="sample.png" />
+      ]]>
+    </question>
+
+    <answer>
+      <![CDATA[
+      <p>
+      <code><pre>
+body     {font-size:    10pt; padding:      10px;}
+em:hover {background: yellow;}
+header   {border-color: black; border-style: solid; border-width: 0px;
+          border-bottom-width: 2px; font-size: 16pt; height: 50px;}
+h1       {font-size: 12pt; font-weight: bold;}
+img#logo {float: right;}
+      </pre></code>
+      </p>
+
+      <p>
+      <code><pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel="stylesheet" type="text/css" href="sample.css" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+    CS345 - Software Engineering 
+    &lt;a href="https://www.jmu.edu"&gt;&lt;img id="logo" src="jmu.gif" /&gt;&lt;a&gt;
+    &lt;/header&gt;
+
+    &lt;section&gt;
+      &lt;h1&gt;Description&lt;/h1&gt; 
+      &lt;p&gt;
+      Software engineering is the application of theories, methods and tools 
+      to the specification, design, creation, verification/validation, 
+      deployment, operation, and maintenance of software products.
+      &lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section&gt;
+      &lt;h1&gt;Textbook&lt;/h1&gt;
+      &lt;p&gt;
+      The primary textbook for this course is 
+      &lt;em&gt;Essentials of Software Engineering&lt;/em&gt;.
+      &lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </pre></code>
+      </p>
+
+      ]]>
+    </answer>
+  </card>
+
+
+
+</guide>
